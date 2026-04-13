@@ -1,14 +1,42 @@
 [
   {
-    "date": "2025-01-01",
-    "content": "Welcome to my new academic homepage! This template is available on GitHub.",
-    "links": [
-        { "text": "GitHub", "url": "https://github.com/yihangtao/AcaNova-X" }
-    ]
+    "date": "2026.02",
+    "content": "🎉 Our team’s work has been published in Sustainable Cities and Society.",
+    "links": []
   },
   {
-     "date": "2024-12-15",
-     "content": "One paper titled 'A Novel Approach to AI' was accepted to CVPR 2025!",
-     "links": []
+    "date": "2026.01",
+    "content": "🎉 Our team’s work has been published in Land.",
+    "links": []
+  },
+  {
+    "date": "2025.12",
+    "content": "🎉 I am very grateful to receive the National Scholarship.",
+    "links": []
+  },
+  {
+    "date": "2025.09",
+    "content": "✨ Honored to receive the Academic Innovation Advanced Individual award at Southeast University.",
+    "links": []
+  },
+  {
+    "date": "2025.07",
+    "content": "🎉 My second first-author journal paper has been published in Building and Environment.",
+    "links": []
+  },
+  {
+    "date": "2025.07",
+    "content": "🌍 I traveled to Istanbul, Türkiye, for the AESOP Congress and gave an oral presentation.",
+    "links": []
+  },
+  {
+    "date": "2025.05",
+    "content": "🎉 Honored to receive the SuJiaoKe Scholarship as the only awardee in my program.",
+    "links": []
+  },
+  {
+    "date": "2025.01",
+    "content": "🎉 My first first-author journal paper has been published in Humanities & Social Sciences Communications.",
+    "links": []
   }
 ]

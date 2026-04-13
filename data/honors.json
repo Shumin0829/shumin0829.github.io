@@ -1,12 +1,32 @@
 [
   {
-    "date": "2025",
-    "title": "Best Paper Award",
-    "org": "International Conference on Computer Vision (ICCV)"
+    "date": "2025.12",
+    "title": "National Scholarship",
+    "org": "Highest academic honor for students in China"
   },
   {
-    "date": "2024",
-    "title": "Outstanding PhD Student Award",
-    "org": "Your University"
+    "date": "2025.09",
+    "title": "Academic Innovation Advanced Individual",
+    "org": "Southeast University"
+  },
+  {
+    "date": "2025.05",
+    "title": "SuJiaoKe Scholarship",
+    "org": "Only recipient in the program"
+  },
+  {
+    "date": "2024.08",
+    "title": "Lei'ao Cup University-Enterprise Joint AI Application Competition",
+    "org": "Innovation Award · Team Lead"
+  },
+  {
+    "date": "2023.05",
+    "title": "Outstanding Graduate of Hunan Province",
+    "org": "Top 1%"
+  },
+  {
+    "date": "2021.12",
+    "title": "National Scholarship",
+    "org": "Highest academic honor for students in China"
   }
 ]

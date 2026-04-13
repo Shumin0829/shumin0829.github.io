@@ -261,29 +261,41 @@ function loadPublications() {
                     let thumbBox = null;
                     if (pub.thumbnail) {
                         const btnPreview = document.createElement('button');
-                        btnPreview.className = 'pub-link-btn pub-btn-preview';
-                        btnPreview.textContent = 'Image';
+                        btnPreview.className = 'pub-link-btn pub-btn-preview active';
+                        btnPreview.textContent = 'Hide Image';
+                        line1.appendChild(btnPreview);
+                        
+                        // Create thumbnail container
+                        thumbBox = document.createElement('div');
+                        thumbBox.className = 'pub-thumbnail-box';
+                        thumbBox.style.display = 'block';
+                        li.classList.add('with-thumbnail-expanded');
+                        
+                        const thumbLink = document.createElement('a');
+                        thumbLink.href = pub.thumbnail;
+                        thumbLink.target = '_blank';
+                        thumbLink.rel = 'noopener noreferrer';
+                        
+                        const thumbImg = document.createElement('img');
+                        thumbImg.src = pub.thumbnail;
+                        thumbImg.alt = 'Publication Thumbnail';
+                        
+                        thumbLink.appendChild(thumbImg);
+                        thumbBox.appendChild(thumbLink);
+                        
                         btnPreview.onclick = function() {
                             if (li.classList.contains('with-thumbnail-expanded')) {
                                 li.classList.remove('with-thumbnail-expanded');
                                 thumbBox.style.display = 'none';
                                 btnPreview.classList.remove('active');
+                                btnPreview.textContent = 'Show Image';
                             } else {
                                 li.classList.add('with-thumbnail-expanded');
                                 thumbBox.style.display = 'block';
                                 btnPreview.classList.add('active');
+                                btnPreview.textContent = 'Hide Image';
                             }
                         };
-                        line1.appendChild(btnPreview);
-
-                        // Create thumbnail container
-                        thumbBox = document.createElement('div');
-                        thumbBox.className = 'pub-thumbnail-box';
-                        thumbBox.style.display = 'none';
-                        const thumbImg = document.createElement('img');
-                        thumbImg.src = pub.thumbnail;
-                        thumbImg.alt = 'Publication Thumbnail';
-                        thumbBox.appendChild(thumbImg);
                     }
                     
                     contentWrapper.appendChild(line1);
@@ -474,7 +486,7 @@ function renderNewsItems(newsData, containerId) {
         
         // Create emoji and content text
         const textSpan = document.createElement('span');
-        textSpan.innerHTML = '🎉 ' + newsItem.content;
+        textSpan.innerHTML = newsItem.content;
         contentElement.appendChild(textSpan);
         
         // Add links if provided in the links array format

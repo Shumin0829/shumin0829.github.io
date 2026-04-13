@@ -1,26 +1,39 @@
 [
   {
-    "title": "AcaNova-X: A Modern and Elegant Academic Website Template",
-    "authors": "<strong>Your Name</strong>, Collaborator A, Collaborator B",
-    "venue": "CVPR 2025",
+    "title": "An interpretable spatially weighted machine learning approach for revealing spatial nonstationarity impacts of the built environment on air pollution",
+    "authors": "<strong>Wang, S.</strong>, Hu, M., Li, J., et al.",
+    "venue": "Building and Environment, 280, 113150",
     "year": "2025",
-    "highlight": "Oral",
-    "thumbnail": "assets/publications/placeholder/paper-thumb.png",
+    "highlight": "First Author",
+    "thumbnail": "",
     "tags": [
-      { "text": "Paper", "link": "#" },
-      { "text": "Code", "link": "#" },
-      { "text": "Project Page", "link": "#" }
+      {
+        "text": "DOI",
+        "link": "https://doi.org/10.1016/j.buildenv.2025.113150"
+      }
     ]
   },
   {
-    "title": "Another Great Research Work on Machine Learning",
-    "authors": "Collaborator A, <strong>Your Name</strong>, Collaborator B",
-    "venue": "NeurIPS 2024",
-    "year": "2024",
-    "highlight": "Spotlight",
+    "title": "Exploring the innovation potential of urban space at the micro scale: a case study of Suzhou’s main urban area",
+    "authors": "<strong>Wang, S.</strong>, Liu, H., Li, Y., & Hu, M.",
+    "venue": "Humanities and Social Sciences Communications, 12, 80",
+    "year": "2025",
+    "highlight": "First Author",
     "thumbnail": "",
     "tags": [
-      { "text": "Paper", "link": "#" }
+      {
+        "text": "DOI",
+        "link": "https://doi.org/10.1057/s41599-025-04385-y"
+      }
     ]
+  },
+  {
+    "title": "Exploring Low-Carbon Urban Development at the Plot Scale: A Study of Carbon Emission Mechanisms and Empirical Exploration of Micro-Renovation for Emission Reduction",
+    "authors": "<strong>Wang, S.</strong>, Liu, G., Li, J., et al.",
+    "venue": "AESOP Annual Congress 2025",
+    "year": "2025",
+    "highlight": "Accepted",
+    "thumbnail": "",
+    "tags": []
   }
 ]

@@ -95,8 +95,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Check if we're on the homepage
             const latestNewsSection = document.getElementById('latest-news');
             if (latestNewsSection) {
-                // On homepage - show limited news (first 8 items)
-                renderNewsItems(data.slice(0, 8), 'news-container');
+                // The scrollable homepage list includes the complete news archive.
+                renderNewsItems(data, 'news-container');
             }
             
             // Check if we're on the all-news page
@@ -122,8 +122,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Check if we're on the homepage
             const honorsSection = document.getElementById('honors');
             if (honorsSection) {
-                // On homepage - show limited honors (first 8 items)
-                renderHonorsItems(data.slice(0, 8), 'honors-container');
+                // The scrollable homepage list includes every honor.
+                renderHonorsItems(data, 'honors-container');
             }
             
             // Check if we're on the all-honors page

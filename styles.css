@@ -92,7 +92,7 @@ section {
 
 @media (min-width: 1024px) {
     .grid-layout {
-        grid-template-columns: 320px 1fr;
+        grid-template-columns: 320px minmax(0, 1fr);
         gap: 4rem;
         align-items: start;
     }
@@ -325,6 +325,78 @@ details summary {
 }
 
 /* News Item Dashed Line */
+.content-column, .timeline-content, .news-content, .honor-content {
+    min-width: 0;
+    overflow-wrap: break-word;
+}
+
+.scroll-list {
+    max-height: 20rem;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    scrollbar-width: thin;
+    scrollbar-color: #d4a562 #f1f5f9;
+    padding: 0.25rem 1rem 0.25rem 0.25rem;
+}
+
+.scroll-list:focus-visible {
+    outline: 2px solid #d4a562;
+    outline-offset: 4px;
+    border-radius: 4px;
+}
+
+.scroll-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-list::-webkit-scrollbar-thumb {
+    background: #d4a562;
+}
+
+.scroll-hint {
+    margin-top: 0.75rem;
+    color: #64748b;
+    font-size: 0.75rem;
+    text-align: right;
+}
+
+/* Show the emblem from each university's original official logo lockup. */
+.school-emblem {
+    display: block;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+
+.school-emblem img {
+    display: block;
+    height: 48px;
+    width: auto;
+    max-width: none;
+}
+
+.school-emblem-polyu img {
+    height: 45px;
+    margin-top: 1.5px;
+}
+
+.school-emblem-csu img {
+    height: 44px;
+    margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+    .scroll-list {
+        max-height: 18rem;
+        padding-right: 0.75rem;
+    }
+
+    .scroll-list .news-item, .scroll-list .honor-item {
+        grid-template-columns: 64px minmax(0, 1fr);
+        gap: 0.75rem;
+    }
+}
+
 .news-item {
     display: grid;
     grid-template-columns: 80px 1fr;

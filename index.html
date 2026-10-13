@@ -197,9 +197,10 @@
                             <h2 class="text-3xl font-serif font-bold text-primary">🔥 News</h2>
                             <a href="pages/all-news.html" class="text-sm font-medium text-accent hover:text-accent-dark transition-colors">View All <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
-                        <div id="news-container" class="news-list space-y-4">
+                        <div id="news-container" class="news-list space-y-4 scroll-list" tabindex="0" role="region" aria-label="News, scroll to view earlier updates">
                             <!-- Dynamic Content loaded from data/news.json -->
                         </div>
+                        <p class="scroll-hint">Scroll for earlier updates <span aria-hidden="true">↓</span></p>
                     </section>
 
                     <!-- Publications Section -->
@@ -219,9 +220,10 @@
                             <h2 class="text-3xl font-serif font-bold text-primary">🏆 Honors & Awards</h2>
                             <a href="pages/all-honors.html" class="text-sm font-medium text-accent hover:text-accent-dark transition-colors">View All <i class="fas fa-arrow-right ml-1"></i></a>
                         </div>
-                        <div id="honors-container" class="honors-list space-y-4">
+                        <div id="honors-container" class="honors-list space-y-4 scroll-list" tabindex="0" role="region" aria-label="Honors and awards, scroll to view more">
                             <!-- Dynamic Content loaded from data/honors.json -->
                         </div>
+                        <p class="scroll-hint">Scroll for more awards <span aria-hidden="true">↓</span></p>
                     </section>
 
                     <!-- Academic Service Section -->
@@ -243,6 +245,26 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Journal Reviewer</h3>
+                                    <p class="text-sm text-accent font-medium">Building and Environment</p>
+                                    <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Served as a reviewer for Building and Environment.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item flex gap-4">
+                                <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100 text-2xl text-accent">
+                                    <i class="fas fa-edit" aria-hidden="true"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h3 class="font-semibold text-primary">Journal Reviewer</h3>
+                                    <p class="text-sm text-accent font-medium">City and Environment Interactions</p>
+                                    <p class="text-sm text-neutral-600 mt-1 leading-relaxed">Served as a reviewer for City and Environment Interactions.</p>
+                                </div>
+                            </div>
                         </div>
                     </section>
 
@@ -254,7 +276,7 @@
                         <div class="timeline space-y-6">
                             <div class="timeline-item flex gap-4">
                                 <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100">
-                                    <i class="fas fa-graduation-cap text-3xl text-neutral-300"></i>
+                                    <span class="school-emblem school-emblem-polyu"><img src="assets/schools/polyu.png" alt="The Hong Kong Polytechnic University emblem" loading="lazy"></span>
                                 </div>
                                 <div class="timeline-content">
                                     <h3 class="font-semibold text-primary">PhD Student in Land Surveying and Geo-Informatics</h3>
@@ -267,7 +289,7 @@
                             </div>
                             <div class="timeline-item flex gap-4">
                                 <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100">
-                                    <i class="fas fa-graduation-cap text-3xl text-neutral-300"></i>
+                                    <span class="school-emblem school-emblem-seu"><img src="assets/schools/seu.svg" alt="Southeast University emblem" loading="lazy"></span>
                                 </div>
                                 <div class="timeline-content">
                                     <h3 class="font-semibold text-primary">Master of Urban and Rural Planning</h3>
@@ -280,7 +302,7 @@
                             </div>
                             <div class="timeline-item flex gap-4">
                                 <div class="school-logo-container w-16 h-16 flex-shrink-0 bg-white rounded-lg shadow-sm p-2 flex items-center justify-center border border-neutral-100">
-                                    <i class="fas fa-university text-3xl text-neutral-300"></i>
+                                    <span class="school-emblem school-emblem-csu"><img src="assets/schools/csu.jpg" alt="Central South University emblem" loading="lazy"></span>
                                 </div>
                                 <div class="timeline-content">
                                     <h3 class="font-semibold text-primary">Bachelor of Urban and Rural Planning</h3>

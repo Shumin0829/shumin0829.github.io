@@ -432,6 +432,29 @@ details summary {
     line-height: 1.6;
 }
 
+/* Inline links use the site's warm gold palette, not inherited body gray. */
+a.link-highlight,
+a.link-highlight:visited {
+    color: #b88a4d;
+    font-weight: 600;
+    text-decoration: underline;
+    text-decoration-color: rgba(212, 165, 98, 0.55);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+    transition: color 0.2s, text-decoration-color 0.2s;
+}
+
+a.link-highlight:hover {
+    color: #946b34;
+    text-decoration-color: currentColor;
+}
+
+a.link-highlight:focus-visible {
+    outline: 2px solid #d4a562;
+    outline-offset: 3px;
+    border-radius: 2px;
+}
+
 /* Service Section */
 .service-category {
     padding-bottom: 1.5rem;
